@@ -4,7 +4,7 @@ pipeline {
         stage('Git checkout') { 
             steps{
                 sh 'whoami'
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/aliarslangit/aks-nginx-jenkins.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/umairhameed236/aks-with-ingress.git'
             }
         }
     stage('Installing Azure Modules/CLI') {
